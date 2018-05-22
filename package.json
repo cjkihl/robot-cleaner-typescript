@@ -1,0 +1,41 @@
+{
+  "name": "cleaning-robot",
+  "version": "0.1.2",
+  "description": "A simple cleaning robot for Cint",
+  "author": "Carl-Johan Kihl",
+  "license": "mit",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "watch": "nodemon src/index.ts --exec ts-node",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:carkih/cleaning-robot.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.1.2",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1",
+    "ts-jest": "^22.4.5",
+    "ts-node": "^6.0.3",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.12.0",
+    "typescript": "^2.8.3"
+  }
+}
